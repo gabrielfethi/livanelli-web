@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Livanelli LLC</title>
+  <meta name="description" content="Privacy policy for Livanelli LLC and its apps: CoParent Shield and DiaWise."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --cream:      #FAF7F2;
+      --linen:      #F0EAE0;
+      --white:      #FFFFFF;
+      --border:     #E0D9D0;
+      --border-s:   #EDE7DD;
+      --sage:       #7A9E7E;
+      --sage-dark:  #5C7D60;
+      --terracotta: #C26B47;
+      --amber:      #D4974A;
+      --charcoal:   #1C1C1C;
+      --body:       #3A3F47;
+      --slate:      #6B7280;
+      --slate-l:    #9BA3AC;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 20px 56px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(250,247,242,0.93);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo-mark { width: 32px; height: 32px; }
+    .nav-wordmark { font-family: 'DM Serif Display', serif; font-size: 19px; color: var(--charcoal); letter-spacing: 0.2px; }
+    .nav-right { display: flex; align-items: center; gap: 36px; }
+    .nav-link { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; font-weight: 500; }
+    .nav-link:hover { color: var(--charcoal); }
+    .nav-cta { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; padding: 9px 22px; border: 1.5px solid var(--border); border-radius: 6px; color: var(--charcoal); text-decoration: none; transition: border-color 0.2s, color 0.2s; font-weight: 500; }
+    .nav-cta:hover { border-color: var(--sage); color: var(--sage); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      padding: 160px 56px 80px;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-eyebrow {
+      font-size: 11px; letter-spacing: 3.5px; text-transform: uppercase;
+      color: var(--sage); font-weight: 500; margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .page-eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--sage); opacity: 0.4; }
+    .page-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(40px, 5vw, 72px);
+      font-weight: 400; line-height: 1.1; color: var(--charcoal);
+      margin-bottom: 24px;
+    }
+    .page-meta { font-size: 13px; color: var(--slate-l); letter-spacing: 0.5px; }
+
+    /* ── CONTENT ── */
+    .content-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 56px 120px;
+    }
+
+    .intro-block {
+      background: var(--linen);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px 40px;
+      margin-bottom: 64px;
+    }
+    .intro-block p {
+      font-size: 16px; color: var(--body); line-height: 1.85; font-weight: 300;
+    }
+    .intro-block p + p { margin-top: 16px; }
+
+    .policy-section { margin-bottom: 64px; }
+    .policy-section:last-child { margin-bottom: 0; }
+
+    .section-number {
+      font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--slate-l); font-weight: 500; margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px; color: var(--charcoal);
+      margin-bottom: 20px; line-height: 1.2;
+    }
+    .section-divider {
+      width: 32px; height: 2px; background: var(--sage);
+      border-radius: 2px; margin-bottom: 28px;
+    }
+
+    p { font-size: 15px; color: var(--body); line-height: 1.9; margin-bottom: 18px; font-weight: 300; }
+    p:last-child { margin-bottom: 0; }
+
+    .app-block {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .app-block-header {
+      padding: 18px 28px;
+      display: flex; align-items: center; gap: 14px;
+      border-bottom: 1px solid var(--border-s);
+    }
+    .app-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .app-block-name { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--charcoal); }
+    .app-block-badge { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; font-weight: 600; margin-left: auto; }
+    .badge-live { background: rgba(122,158,126,0.1); color: var(--sage-dark); border: 1px solid rgba(122,158,126,0.25); }
+    .badge-soon { background: rgba(212,151,74,0.08); color: #9A6010; border: 1px solid rgba(212,151,74,0.25); }
+    .app-block-body { padding: 24px 28px; }
+    .app-block-body p { font-size: 14px; margin-bottom: 12px; }
+
+    ul.policy-list {
+      list-style: none; padding: 0; margin: 0 0 18px;
+    }
+    ul.policy-list li {
+      font-size: 15px; color: var(--body); line-height: 1.8;
+      padding: 10px 0; border-bottom: 1px solid var(--border-s);
+      display: flex; align-items: flex-start; gap: 14px; font-weight: 300;
+    }
+    ul.policy-list li:last-child { border-bottom: none; }
+    ul.policy-list li::before { content: '—'; color: var(--sage); flex-shrink: 0; margin-top: 2px; }
+
+    .contact-block {
+      background: var(--linen);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px 40px;
+      margin-top: 64px;
+      display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;
+    }
+    .contact-block-text { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--charcoal); line-height: 1.3; }
+    .contact-block-text em { font-style: italic; color: var(--sage); }
+    .btn-primary { padding: 13px 28px; background: var(--sage); color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 6px; transition: background 0.2s; white-space: nowrap; }
+    .btn-primary:hover { background: var(--sage-dark); }
+
+    /* ── FOOTER ── */
+    footer { border-top: 1px solid var(--border); padding: 32px 56px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; background: var(--cream); }
+    .footer-left { font-size: 12px; color: var(--slate-l); }
+    .footer-links { display: flex; gap: 28px; }
+    .footer-links a { font-size: 12px; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--charcoal); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      .nav-right { gap: 16px; }
+      .page-header { padding: 120px 24px 56px; }
+      .content-wrap { padding: 56px 24px 80px; }
+      .intro-block { padding: 28px 24px; }
+      .app-block-header { padding: 16px 20px; }
+      .app-block-body { padding: 20px; }
+      .contact-block { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
+      footer { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">
+      <svg class="nav-logo-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="100" fill="#FAF7F2"/>
+        <circle cx="100" cy="100" r="94" fill="none" stroke="#E0D9D0" stroke-width="2"/>
+        <text x="100" y="132" font-family="Georgia,serif" font-size="104" font-weight="700" fill="#1C1C1C" text-anchor="middle" opacity="0.9">L</text>
+        <circle cx="140" cy="64" r="9" fill="#C26B47"/>
+      </svg>
+      <span class="nav-wordmark">Livanelli</span>
+    </a>
+    <div class="nav-right">
+      <a href="/#apps" class="nav-link">Apps</a>
+      <a href="/#mission" class="nav-link">Mission</a>
+      <a href="mailto:gabrielfethi@livanelli.com" class="nav-cta">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-eyebrow">Legal</div>
+    <h1 class="page-title">Privacy Policy</h1>
+    <div class="page-meta">Livanelli LLC &nbsp;·&nbsp; Effective March 2026 &nbsp;·&nbsp; Philadelphia, PA</div>
+  </div>
+
+  <div class="content-wrap">
+
+    <div class="intro-block">
+      <p>We built these apps for people in difficult, sensitive situations. We take that responsibility seriously. This policy explains clearly and plainly what data each app collects, what stays on your device, and what leaves it — with no ambiguity.</p>
+      <p>We do not sell data. We do not run ads. We do not share your personal information with third parties except as required to deliver the core features described below.</p>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="policy-section">
+      <div class="section-number">01</div>
+      <h2 class="section-title">Who we are</h2>
+      <div class="section-divider"></div>
+      <p>Livanelli LLC is an independent mobile app studio based in Philadelphia, Pennsylvania. We build AI-powered apps for underserved communities. Our contact email is <a href="mailto:gabrielfethi@livanelli.com" style="color:var(--sage);text-decoration:none;">gabrielfethi@livanelli.com</a>.</p>
+      <p>This policy covers the livanelli.com website and all apps published by Livanelli LLC, currently CoParent Shield and DiaWise.</p>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="policy-section">
+      <div class="section-number">02</div>
+      <h2 class="section-title">This website</h2>
+      <div class="section-divider"></div>
+      <p>livanelli.com is a static informational site. It does not use cookies, analytics trackers, advertising pixels, or any third-party tracking scripts. No personal data is collected simply by visiting this site.</p>
+      <p>If you contact us by email, your message and email address are used only to respond to you. We do not store them in any database or CRM.</p>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="policy-section">
+      <div class="section-number">03</div>
+      <h2 class="section-title">Our apps</h2>
+      <div class="section-divider"></div>
+
+      <div class="app-block">
+        <div class="app-block-header">
+          <div class="app-dot" style="background:#7A9E7E;"></div>
+          <div class="app-block-name">CoParent Shield</div>
+          <span class="app-block-badge badge-soon">Launching 2026</span>
+        </div>
+        <div class="app-block-body">
+          <p><strong style="font-weight:600;">What stays on your device</strong></p>
+          <ul class="policy-list">
+            <li>Journal entries, incident notes, and image attachments are stored in an encrypted local SQLite database on your device. This data never leaves your device and is never sent to our servers or any third party.</li>
+            <li>Your onboarding preferences and app settings are stored locally in your device's secure storage.</li>
+          </ul>
+          <p style="margin-top:16px;"><strong style="font-weight:600;">What leaves your device</strong></p>
+          <ul class="policy-list">
+            <li>Messages you submit for analysis are sent to Anthropic's Claude API to generate a response. Anthropic's data handling practices are governed by their privacy policy at anthropic.com. We do not store the content of your messages on our servers.</li>
+            <li>Basic, anonymous usage signals (e.g. app crashes) may be collected by Apple or Google through standard platform crash reporting. This is controlled by your device's privacy settings.</li>
+          </ul>
+          <p style="margin-top:16px;"><strong style="font-weight:600;">What we do not collect</strong></p>
+          <ul class="policy-list">
+            <li>We do not collect your name, email address, phone number, or any account information in v1.0.</li>
+            <li>We do not sell, rent, or share your data with advertisers or data brokers — ever.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="app-block">
+        <div class="app-block-header">
+          <div class="app-dot" style="background:#D4974A;"></div>
+          <div class="app-block-name">DiaWise</div>
+          <span class="app-block-badge badge-soon">Coming 2026</span>
+        </div>
+        <div class="app-block-body">
+          <p>DiaWise is currently in development. A detailed privacy policy for DiaWise will be published here before the app becomes available. It will follow the same principles as CoParent Shield: local-first data storage, no data sales, and transparent disclosure of any third-party services used.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="policy-section">
+      <div class="section-number">04</div>
+      <h2 class="section-title">Third-party services</h2>
+      <div class="section-divider"></div>
+      <p>CoParent Shield uses the following third-party service to deliver its core AI features:</p>
+      <ul class="policy-list">
+        <li><strong style="font-weight:600;">Anthropic Claude API</strong> — Messages you submit for analysis are processed by Anthropic. Their privacy policy is available at <a href="https://anthropic.com/privacy" target="_blank" style="color:var(--sage);text-decoration:none;">anthropic.com/privacy</a>.</li>
+      </ul>
+      <p style="margin-top:18px;">We do not use advertising networks, social media trackers, marketing automation platforms, or data brokers in any of our apps.</p>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="policy-section">
+      <div class="section-number">05</div>
+      <h2 class="section-title">Your rights</h2>
+      <div class="section-divider"></div>
+      <p>Because most data in our apps is stored locally on your device, you are already in control of it. You can delete the app at any time to remove all locally stored data.</p>
+      <p>If you have questions about data that may have been transmitted (e.g. messages sent to the Anthropic API), or if you would like to make a data request, please contact us at <a href="mailto:gabrielfethi@livanelli.com" style="color:var(--sage);text-decoration:none;">gabrielfethi@livanelli.com</a> and we will respond within 30 days.</p>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="policy-section">
+      <div class="section-number">06</div>
+      <h2 class="section-title">Children's privacy</h2>
+      <div class="section-divider"></div>
+      <p>Our apps are intended for adults (18+). We do not knowingly collect personal information from anyone under 18. If you believe a minor has submitted personal information through one of our apps, please contact us and we will take appropriate action.</p>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="policy-section">
+      <div class="section-number">07</div>
+      <h2 class="section-title">Changes to this policy</h2>
+      <div class="section-divider"></div>
+      <p>If we make material changes to this policy, we will update the effective date at the top of this page. For significant changes affecting how we handle sensitive data, we will notify users within the app.</p>
+    </div>
+
+    <div class="contact-block">
+      <div class="contact-block-text">Questions about<br/>your <em>privacy?</em></div>
+      <a href="mailto:gabrielfethi@livanelli.com" class="btn-primary">gabrielfethi@livanelli.com</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-left">&copy; 2026 Livanelli LLC &mdash; Philadelphia, PA</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="https://coparentshield.net" target="_blank">CoParent Shield</a>
+      <a href="mailto:gabrielfethi@livanelli.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
